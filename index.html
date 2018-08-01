@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--
+              +++++++++++++
+            +++++++++++++++++
+          +++++++++++++++++++++
+         +++++++ ---------- ++++       ____                                         ____       _
+        ++++++++|  ______  |+++++     |  _ \                                       |  _ \     (_)
+        ++++++__| |______| |+++++     | |_) |_ __ __ _ _ __   __ _  ___ _ __       | |_) |_ __ _ ____
+        +++++|  _________  |+++++     |  _ <| '__/ _` | '_ \ / _` |/ _ \ '__|      |  _ <| '__| |_  /
+        +++++| |_________| |+++++     | |_) | | | (_| | | | | (_| |  __/ |         | |_) | |  | |/ /
+         ++++|_____________|++++      |____/|_|  \__,_|_| |_|\__, |\___|_| _______ |____/|_|  |_/___|
+          +++++++++++++++++++++                              __ | |       |_______|
+            +++++++++++++++++                                \___/
+              +++++++++++++
+        -->
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title> Branger_Briz </title>
+
+        <link rel="icon" type="image/png" href="images/bb.svg" />
+        <meta name="description" content="we are a full­service digital agency+lab made up of artists, strategists, educators && programmers bent on articulating contemporary culture. we produce award winning work for brands, agencies, and cultural institutions around the world.">
+
+        <!-- for Google+ -->
+        <meta itemprop="name" content="Branger_Briz">
+        <meta itemprop="description" content="we are a full­service digital agency+lab made up of artists, strategists, educators && programmers bent on articulating contemporary culture">
+        <meta itemprop="image" content="images/bb.svg">
+        <!-- for Twitter -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@branger_briz">
+        <meta name="twitter:title" content="Branger_Briz">
+        <meta name="twitter:description" content="we are a full­service digital agency+lab made up of artists, strategists, educators && programmers bent on articulating contemporary culture.">
+        <meta name="twitter:creator" content="@branger_briz">
+        <!-- Twitter summary card with large image must be at least 280x150px -->
+        <meta name="twitter:image:src" content="images/bb.svg">
+        <!-- for Facebook -->
+        <meta property="og:title" content="Branger_Briz" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="http://brangerbriz.com/" />
+        <meta property="og:image" content="images/bb.svg" />
+        <meta property="og:description" content="we are a full­service digital agency+lab made up of artists, strategists, educators && programmers bent on articulating contemporary culture." />
+        <meta property="og:site_name" content="Branger_Briz" />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/bb-fonts.css">
+        <link rel="stylesheet" href="css/bb-styles.css">
+        <link rel="stylesheet" href="css/bb-responsive.css">
+        <link rel="stylesheet" href="css/bb-colors-code.css">
+        <link rel="stylesheet" href="css/bb-animations.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <section id="bb">
+            <router-view :key="$route.fullPath"></router-view>
+        </section>
+
+        <script src="js/BB-IE-banner.js"></script>
+        <!-- https://vuejs.org/ -->
+        <!-- <script src="js/libs/vue.min.js"></script> -->
+        <script src="js/libs/vue.js"></script>
+        <!-- https://router.vuejs.org/ -->
+        <script src="js/libs/vue-router.js"></script>
+        <!-- https://highlightjs.org/ -->
+        <script src="js/libs/highlight.pack.js"></script>
+        <!-- https://github.com/cure53/DOMPurify -->
+        <script src="js/libs/purify.min.js"></script>
+        <!-- https://github.com/brangerbriz/BBElements -->
+        <script src="js/BBElements.js"></script>
+        <script src="js/utils/updateLegacyBBElements.js"></script>
+        <script src="js/utils/organizeBBCMSdata.js"></script>
+        <script src="js/components/home-menu.js"></script>
+        <script src="js/components/bb-footer.js"></script>
+        <script src="js/components/blog-summary.js"></script>
+        <script src="js/components/work-summary.js"></script>
+        <script src="js/components/search-box.js"></script>
+        <script src="js/components/sub-page.js"></script>
+        <script src="js/components/list-page.js"></script>
+        <script src="js/components/home-page.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/BBanalytics.js"></script>
+    </body>
+</html>
