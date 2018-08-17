@@ -156,7 +156,7 @@ a:hover, a:hover { color:#e40477; border-bottom:2px solid #e40477; }
 }
 
 #services h4 {
-    font-family:"BB_Thin", sans-serif; font-size:24px; color:#000;
+    font-family:"BB_copy", sans-serif; font-size:24px; color:#5f5f5f; font-weight: normal;
     margin:0px 0px 12px 0px; cursor:pointer;
 }
 #services h4:hover { color:#e40477; }
