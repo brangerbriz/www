@@ -243,7 +243,7 @@ a:hover, a:hover { color:#e40477; border-bottom:2px solid #e40477; }
 .more-projects:hover { color:#fff; background-color:#e40477; }
 
 @media (max-width: 1280px) {
-    #work { padding-left:10px; }
+    #work { padding-left:10px; box-sizing: border-box; }
 }
 @media (max-width: 767px) {
     #work { display:block; padding-left:0px; }
