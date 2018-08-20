@@ -25,7 +25,8 @@ Vue.component('work-summary', {
                 font-family:"BB_copy";
                 font-size: 16px;
                 line-height: 24px;
-                color: #000;
+                color: #5f5f5f;
+                letter-spacing: 1px;
             }
 
             .bbws .ws-title {
@@ -40,10 +41,11 @@ Vue.component('work-summary', {
 
             .bbws .ws-sub-title {
                 font-family:"BB_Thin";
-                color:#000;
+                color:#5f5f5f;
                 font-size: 25px;
                 line-height: 30px;
                 padding-bottom:30px;
+                letter-spacing: 0px;
             }
 
             .bbws .ws-summary {
