@@ -167,11 +167,11 @@ a:hover, a:hover { color:#e40477; border-bottom:2px solid #e40477; }
     }
 }
 @media (max-width: 1023px) {
-    #services > section { grid-template-columns: 2fr 2fr 2fr; }
+    #services > section { padding:80px 20px 80px 20px; grid-template-columns: 2fr 2fr 2fr; }
     #services .break { display:none; }
 }
 @media (max-width: 767px) {
-    #services > section { display:block; width:90%; margin:0 auto; }
+    #services > section { padding:80px 20px 80px 20px; display:block; width:90%; margin:0 auto; }
     #services > section > * { display:block; margin-bottom:30px; }
 }
 

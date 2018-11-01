@@ -76,7 +76,7 @@ window.BBComps.homePage = Vue.component('home-page', {
         },
         calcArrow:function(){
             if( this.$refs.arrow ){
-                let l = innerWidth/2 - (innerWidth/6.62)/2
+                l = innerWidth/2 - innerWidth*.3/2
                 let t = innerHeight/2.36
                 this.$refs.arrow.style.top = t+"px"
                 this.$refs.arrow.style.left = l+"px"
@@ -137,17 +137,18 @@ window.BBComps.homePage = Vue.component('home-page', {
         <section id="statement">
             <section class="copy">
                 <span class="hide"></span>
-                <span></span>
+
                 <span>we're a full-service digital agency + lab
                 made up of artists, strategists, educators and programmers.
                 we produce award winning work for brands, agencies, and
                 cultural institutions around the world.</span>
-
+                <span></span>
                 <span class="hide"></span>
+                <span></span>
                 <span>we turn insights into strategy,
                 strategy into design and design into innovative
                 multi-platform experiences.</span>
-                <span></span>
+
             </section>
         </section>
 
