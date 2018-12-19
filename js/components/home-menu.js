@@ -28,11 +28,12 @@ window.BBComps.homeMenu = Vue.component('home-menu', {
         // if we're on a portfolio item that's in the array
         // adjust menu color when over/past the header image
         document.addEventListener('scroll',(e)=>{
+            let pageY = document.documentElement.scrollTop
             if(this.$route.path=="/"){
-                if(e.pageY > innerHeight) this.color = '#000'
+                if(pageY > innerHeight) this.color = '#000'
                 else this.color = '#fff'
             } else if( slugs.includes(this.$route.path) ){
-                if(e.pageY > innerHeight-250) this.color = '#000'
+                if(pageY > innerHeight-250) this.color = '#000'
                 else this.color = '#fff'
             }
         })
