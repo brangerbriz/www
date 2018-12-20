@@ -134,8 +134,8 @@ window.BBComps.homePage = Vue.component('home-page', {
 
         <section id="splash" ref="splash">
             <video autoplay muted loop poster="video/reel.png">
-                <source src="video/reel.ogv" type="video/ogv">
                 <source src="video/reel.mp4" type="video/mp4">
+                <source src="video/reel.ogv" type="video/ogg">
             </video>
         </section>
 
