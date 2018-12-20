@@ -44,7 +44,8 @@ window.BBComps.homePage = Vue.component('home-page', {
             }
         },
         calcPageBG:function(){
-            if(scrollY > innerHeight ) document.body.style.background = "#fff"
+            let splashHeight = parseInt(this.$refs.splash.style.height)
+            if(scrollY > splashHeight ) document.body.style.background = "#fff"
             else document.body.style.background = "#000"
         },
         calcSplashHeight:function(){
