@@ -199,7 +199,7 @@ window.BBComps.homePage = Vue.component('home-page', {
                 <span></span>
                 <h2>digital<br>r+d<br>lab</h2>
                 <span class="lab-copy">
-                    our dedicated research &amp; development lab is a major part of our process - helping to ensure we produce work for clients that is cutting-edge + contributes to the broader digital landscape. the lab also creates experimental work that provides context + perspective on the misunderstood aspects of the digital ecosystem. if you're interested in diving a little deeper, <a href="#">check out our r&amp;d lab page</a>.
+                    our dedicated research &amp; development lab is a major part of our process - helping to ensure we produce work for clients that is cutting-edge + contributes to the broader digital landscape. the lab also creates experimental work that provides context + perspective on the misunderstood aspects of the digital ecosystem. if you're interested in diving a little deeper, <a href="http://labs.brangerbriz.com/">check out our r&amp;d lab page</a>.
                 </span>
                 <span></span>
             </section>
