@@ -24,8 +24,8 @@ const store = {
         work:[], // all portfolio posts
         filtered:[], // list of filtered posts for list-page
         post:null, // current post for sub-page (blog/work item)
-        featuredTags:[], // featured tags for home-page
         featuredWork:[], // featured work for home-page
+        featuredTags:[], // featured tags for home-page
         tagDescriptions:{}, // tags that also have special descriptions
         search:{} // search ditionary for quick lookup
     },
@@ -56,6 +56,13 @@ const store = {
                     this.state.search[key].push(index)
             } else {
                 this.state.search[key] = [index]
+            }
+        }
+    },
+    updateTagDescription(featuredTags){
+        for( tag in featuredTags ){
+            if( featuredTags[tag] ){
+                this.state.tagDescriptions[tag] = featuredTags[tag]
             }
         }
     }
@@ -101,7 +108,8 @@ const app = new Vue({
             store.update('all',cms.all)
             store.update('work',cms.work)
             store.update('blog',cms.blog)
-            store.update('featuredTags',cms.featuredTags)
+            store.update('featuredTags',Object.keys(cms.featuredTags))
+            store.updateTagDescription(cms.featuredTags)
             // create featured work list for home page
             cms.work.forEach(work=>{
                 if(work.featured) store.update('featuredWork',work)
@@ -121,13 +129,6 @@ const app = new Vue({
             fetch('js/utils/stop-words.json')
             .then( res => res.json() )
             .then( data => { this.createSearchDict(data) })
-            .catch( err => { console.error(err) })
-            // create select tag description dictionary
-            fetch('local-tag-descriptions.json')
-            .then( res => res.json() )
-            .then( data => {
-                for(tag in data) store.state.tagDescriptions[tag] = data[tag]
-            })
             .catch( err => { console.error(err) })
         }
     }

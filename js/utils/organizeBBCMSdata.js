@@ -1,7 +1,7 @@
 function organizeCMSdata(res){
     let posts = []
     let blogData = res.data[1].child_component
-    let featuredTags = []
+    let featuredTags = {}
     let tagData = res.data[2].child_component
     let projects = []
     let workData = res.data[3].child_component
@@ -44,7 +44,7 @@ function organizeCMSdata(res){
                     p.year = p.date.getFullYear()
                 }
                 else if(d.name=="Description")
-                    p.content = updateLegacyBBElements(d.value)
+                    p.content = d.value
                 else if(d.name=="Tags")
                     p.tags = tags2Arr(d.value)
                 // meta info
@@ -87,8 +87,8 @@ function organizeCMSdata(res){
                 else if(d.name=="clients")
                     p.clients = d.value
                 // -----
-                else if(d.name=="Post Content")
-                    p.content = updateLegacyBBElements(d.value)
+                else if(d.name=="Post Content v2")
+                    p.content = d.value
                 else if(d.name=="Tags")
                     p.tags = tags2Arr(d.value)
                 // meta info
@@ -111,7 +111,9 @@ function organizeCMSdata(res){
     projects.sort(function(a,b){ return b.year - a.year })
 
     for(let d in tagData){
-        featuredTags.push( tagData[d].data[0].value )
+        let tagName = tagData[d].data[0].value
+        let tagInfo = tagData[d].data[1].value
+        featuredTags[tagName.toLowerCase()] = (tagInfo!=="") ? tagInfo : undefined
     }
 
     return {

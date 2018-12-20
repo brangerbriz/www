@@ -47,8 +47,7 @@ window.BBComps.subPage = Vue.component('sub-page', {
                 let sec = this.$el.querySelector('.content_sec')
                 // remove all prior nodes inside section#content
                 while (sec.firstChild) { sec.removeChild(sec.firstChild) }
-                // sanitize HTML before injecting it (remove XSS)
-                sec.innerHTML = DOMPurify.sanitize( this.state.post.content )
+                sec.innerHTML = this.state.post.content
                 // create all special BBElements (logo, marginal notes, etc)
                 BBElements()
             } else {
