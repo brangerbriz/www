@@ -43,7 +43,7 @@ function organizeCMSdata(res){
                     p.date = new Date(d.value)
                     p.year = p.date.getFullYear()
                 }
-                else if(d.name=="Description")
+                else if(d.name=="Description v2")
                     p.content = d.value
                 else if(d.name=="Tags")
                     p.tags = tags2Arr(d.value)
