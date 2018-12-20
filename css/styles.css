@@ -157,9 +157,12 @@ a:hover, a:hover { color:#e40477; border-bottom:2px solid #e40477; }
 
 #services h4 {
     font-family:"BB_copy", sans-serif; font-size:24px; color:#5f5f5f; font-weight: normal;
-    margin:0px 0px 12px 0px; cursor:pointer;
+    margin:0px 0px 12px 0px;
 }
-#services h4:hover { color:#e40477; }
+
+/* NOTE hover disabled until we address the following issue: */
+/* https://github.com/brangerbriz/www/issues/18 */
+/* #services h4:hover { color:#e40477; cursor:pointer; } */
 
 @media (max-width: 1280px) {
     #services > section {

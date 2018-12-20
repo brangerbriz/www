@@ -107,8 +107,12 @@ window.BBComps.homePage = Vue.component('home-page', {
             else this.$router.push('/portfolio')
         },
         goToService:function(e){
-            let text = e.target.textContent
-            this.$router.push('/search?tags='+e.target.textContent)
+            /*
+                // NOTE disabled until we address the following issue:
+                // https://github.com/brangerbriz/www/issues/18
+                let text = e.target.textContent
+                this.$router.push('/search?tags='+e.target.textContent)
+            */
         },
         filterURL:function(tag){
             return `/portfolio?tags=${tag.toLowerCase()}`
