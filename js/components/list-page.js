@@ -4,7 +4,6 @@ window.BBComps.listPage = Vue.component('list-page', {
     data:function(){ return {
         state:store.state,
         title:null, // page sub-title
-        description:null, // descriptions for special filtered pages
         portfolio:false, // used to decide whether or not to show tags
         selectedTags:[] // list of tags currently filtering by
     }},
@@ -34,10 +33,13 @@ window.BBComps.listPage = Vue.component('list-page', {
         },
         initDescription:function(){
             // if currently filtered to a tag that requires a description
-            if( Object.keys(this.state.tagDescriptions).length > 0 ){
+            if( Object.keys(this.state.tagDescriptions).length > 0 &&
+                typeof this.$el.querySelector=="function"){
                 let t = this.$route.query.tags
                 if(this.state.tagDescriptions.hasOwnProperty(t) ){
-                    this.description = this.state.tagDescriptions[t]
+                    let des = this.$el.querySelector('.description')
+                    des.innerHTML = this.state.tagDescriptions[t]
+                    des.style.display = "block"
                 }
             } else setTimeout(this.initDescription,200)
         },
@@ -182,9 +184,7 @@ window.BBComps.listPage = Vue.component('list-page', {
             </span>
         </section>
 
-        <section v-if="description" class="description">
-            {{ description }}
-        </section>
+        <section class="description"></section>
 
         <section class="results" :style="{gridTemplateColumns:calcGrid()}">
             <section class="list-tags" v-if="displayTags()">

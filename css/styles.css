@@ -309,6 +309,7 @@ a:hover, a:hover { color:#e40477; border-bottom:2px solid #e40477; }
 .list-page > .description {
     font-family:"BB_copy"; font-size:20px; line-height:30px; color:#5f5f5f;
     width:100%; max-width:1280px; margin:80px auto;
+    display: none;
 }
 
 .list-page > .results {
