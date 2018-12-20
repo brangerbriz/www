@@ -26,22 +26,24 @@ h1 { font-size: 60px; line-height: 60px; margin: 100px 0px 47px 0px; }
 h2 { font-size: 36px; line-height: 41px; }
 h3 { font-size: 20px; color:#e40477; text-transform: uppercase; }
 
-/* divs && paragraphs * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ */
-div, p {
+/* divs, paragraphs, and lists  ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ */
+div, p, ul, ol {
     font-family: 'BB_copy', sans-serif; font-size: 16px; color:#5f5f5f;
     line-height:24px; letter-spacing:1px; padding: 28px 0px; margin:0;
 }
 
 div::-moz-selection, p::-moz-selection,
 p a::-moz-selection, p i::-moz-selection,
-div a::-moz-selection, div i::-moz-selection { background:#e40477; color:#fff; }
+div a::-moz-selection, div i::-moz-selection, 
+ul a::-moz-selection, ul a::-moz-selection { background:#e40477; color:#fff; }
 div::selection, p::selection, p a::selection, p i::selection,
-div a::selection, div i::selection { background:#e40477; color:#fff; }
+div a::selection, div i::selection, 
+ul a::selection, ol a::selection { background:#e40477; color:#fff; }
 
-div a, p a { color:#e40477; text-decoration:none; padding-bottom:2px; }
-div a:hover, p a:hover { color:#e40477; border-bottom:2px solid #e40477; }
+div a, p a, ul a, ol a { color:#e40477; text-decoration:none; padding-bottom:2px; }
+div a:hover, p a:hover, ul a:hover, ol a:hover { color:#e40477; border-bottom:2px solid #e40477; }
 
-div code, p code {
+div code, p code, ul code, li code {
     font-family:'BB_code'; color:#731ac2;
     background-color:#f7f7f7; padding:5px;
 }
@@ -49,6 +51,8 @@ div code, p code {
 div img, p img { max-width:450px; float:right; padding:0px 0px 24px 24px; }
 
 div.date { margin-top:-75px; color:#828282; }
+
+ul, ol { padding-left: 50px; }
 
 /* quotes * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ */
 div span.quote, p span.quote {

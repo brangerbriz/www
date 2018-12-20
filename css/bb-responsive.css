@@ -17,7 +17,7 @@
 /* for anything greater than 1280px */
 
 #logo { margin-top:32px; }
-h1, h2, h3, p, div, section.media, span.quote, span.tags, pre.code > code {
+h1, h2, h3, p, div, ul, ol, section.media, span.quote, span.tags, pre.code > code {
     width:100%;
     margin-left:auto;
     margin-right:auto;
@@ -36,7 +36,7 @@ span.quote { position:relative; left:-15px; }
 /* ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ */
 @media (max-width: 1280px) {
     h1, h2, span.tags, section.media { max-width:710px; }
-    h3, p, div, pre.code > code { max-width:470px;  }
+    h3, p, div, ul, ol, pre.code > code { max-width:470px;  }
     .caption { left:24px; }
     p img { max-width:350px; margin-right:-234px; }
     p span.quote { margin-left:-257px; padding-right:51px; }
@@ -53,7 +53,7 @@ span.quote { position:relative; left:-15px; }
 @media (max-width: 1023px) {
     h1 { padding-left:0px; }
     h1, h2, h3, span.tags, span.quote,
-    div, p, pre.code > code { max-width:530px; }
+    div, p, ul, ol, pre.code > code { max-width:530px; }
     .caption { margin:0 auto; padding:0; }
     .caption[data-fullwidth="true"] { max-width:580px; margin:0 auto; }
     section.media { max-width:710px; }
@@ -67,6 +67,7 @@ span.quote { position:relative; left:-15px; }
 /* ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ */
 @media (max-width: 767px) {
     h1, h2, h3, span.tags, div, p, pre.code > code { max-width:90%;  }
+    ul, ol { width: calc(100% - 80px); padding-left: 25px; }
     h1 { font-size:42px; line-height:48px; margin-top:27px; }
     h2 { font-size:32px; }
     div.quote-credit { max-width:100%; }
