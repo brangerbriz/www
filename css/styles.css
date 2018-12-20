@@ -476,13 +476,13 @@ a:hover, a:hover { color:#e40477; border-bottom:2px solid #e40477; }
         }
             .bb-footer input { color:#5f5f5f; border:none; }
 
-            .bb-footer input[type="text"]{
+            .bb-footer input[type="email"]{
                 height:50px; width:350px;
                 background-color:#e7e7e7; font-size:35px;
                 padding:2px 19px; margin-right:5px;
             }
             @media (max-width: 767px) {
-                .bb-footer input[type="text"] { width:58%; }
+                .bb-footer input[type="email"] { width:58%; }
             }
 
             .bb-footer input[type="submit"]{

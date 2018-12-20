@@ -28,10 +28,13 @@ Vue.component('bb-footer', {
                 on our projects and cool new technology stuff!
             </span>
 
+            <form id="subForm" class="js-cm-form" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="5B5E7037DA78A748374AD499497E309EB26ECAFFBA6FA835D71ED09E5F2A29EFBE413A142DEED96076DBB583E6BA9AC5BD91A9E279C4C16797F0A69F6953694D">
             <span class="form-inputs">
-                <input type="text" placeholder="email">
+                <input type="email" placeholder="email" id="fieldEmail" name="cm-eutkhh-eutkhh" class="js-cm-email-input" required>
                 <input type="submit" value="submit">
             </span>
+            </form>
+
         </section>
 
         <section>
