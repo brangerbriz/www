@@ -242,7 +242,7 @@ window.BBComps.homePage = Vue.component('home-page', {
                 <img src="images/clients/baptist_health_south_florida.svg" alt="baptist health">
                 <img src="images/clients/patagonia.svg" alt="patagonia">
 
-                <img src="images/clients/benihana.svg" alt="benihana">
+                <img src="images/clients/mozilla.svg" alt="mozilla">
                 <img src="images/clients/burger_king.svg" alt="burger king">
                 <img src="images/clients/verizon.svg" alt="verizon">
                 <img src="images/clients/weather_channel.svg" alt="the weather channel">
