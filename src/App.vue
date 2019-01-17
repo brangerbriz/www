@@ -46,6 +46,7 @@ let y = 100;
     export default {
         name:'App',
         mounted(){
+            this.$store.dispatch('fetchData')
             BBElements()
         }
     }
