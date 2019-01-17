@@ -44,42 +44,9 @@
         <meta property="og:description" content="we are a full­service digital agency+lab made up of artists, strategists, educators && programmers bent on articulating contemporary culture." />
         <meta property="og:site_name" content="Branger_Briz" />
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/bb-fonts.css">
-        <link rel="stylesheet" href="css/bb-styles.css">
-        <link rel="stylesheet" href="css/bb-responsive.css">
-        <link rel="stylesheet" href="css/bb-colors-code.css">
-        <link rel="stylesheet" href="css/bb-animations.css">
-        <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
-        <section id="bb">
-            <router-view :key="$route.fullPath"></router-view>
-        </section>
-
-        <script src="js/BB-IE-banner.js"></script>
-        <!-- https://vuejs.org/ -->
-        <!-- <script src="js/libs/vue.min.js"></script> -->
-        <script src="js/libs/vue.js"></script>
-        <!-- https://router.vuejs.org/ -->
-        <script src="js/libs/vue-router.js"></script>
-        <!-- https://highlightjs.org/ -->
-        <script src="js/libs/highlight.pack.js"></script>
-        <!-- https://www.campaignmonitor.com/ -->
-        <script src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
-        <!-- https://github.com/brangerbriz/BBElements -->
-        <script src="js/BBElements.js"></script>
-        <script src="js/utils/organizeBBCMSdata.js"></script>
-        <script src="js/components/home-menu.js"></script>
-        <script src="js/components/bb-footer.js"></script>
-        <script src="js/components/blog-summary.js"></script>
-        <script src="js/components/work-summary.js"></script>
-        <script src="js/components/search-box.js"></script>
-        <script src="js/components/sub-page.js"></script>
-        <script src="js/components/list-page.js"></script>
-        <script src="js/components/home-page.js"></script>
-        <script src="js/main.js"></script>
-        <script src="js/BBanalytics.js"></script>
+        <div id="app"></div>
+        <script src="/dist/main.js"></script>
     </body>
 </html>
