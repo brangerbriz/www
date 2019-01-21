@@ -6,7 +6,7 @@ module.exports = {
             { test: /\.js$/, use: 'babel-loader' },
             { test: /\.vue$/, use: 'vue-loader' },
             { test: /\.css$/, use: ['vue-style-loader', 'css-loader']},
-            { test: /\.(png|jpg|gif|svg)$/, use: 'file-loader' }
+            { test: /\.(png|jpg|gif|svg|ogv|mp4)$/, use: 'file-loader' }
         ]
     },
     plugins: [

@@ -10,38 +10,34 @@ export default new Vuex.Store({
     strict: true,
     state: {
         loadingStatus:'not-ready',
-        // all:[], // both blog + work posts
         blog:[], // all blog posts
         work:[], // all portfolio posts
         filtered:[], // list of filtered posts for list-page
-        post:null, // current post for sub-page (blog/work item)
         featuredWork:[], // featured work for home-page
         featuredTags:[], // featured tags for home-page
         tagDescriptions:{}, // tags that also have special descriptions
         search:{} // search dictionary for quick lookup
     },
     getters: {
+        isLoading(state){
+            return state.loadingStatus=='ready' ? false : true
+        },
         allPosts(state){
             let all = [...state.blog,...state.work]
             return all.sort(function(a,b){return b.year - a.year})
         },
         currentPost(state){
-            return (type, slug) => {
-                // return state.all.find(p=>p.slug==slug) // TODO try this
-                let found = null
-                for (let idx in state[type]) {
-                    if(state[type][idx].slug == slug){
-                        found = state[type][idx]
-                        break
-                    }
-                }
-                return found
+            return (slug) => {
+                return [...state.blog,...state.work].find(p=>p.slug==slug)
             }
         }
     },
     mutations: {
         setLoadingStatus(state, payload){
             state.loadingStatus = payload
+        },
+        updateFiltered(state, payload){
+            state.filtered = payload
         },
         updatePosts(state, cmsData){
             state.work = cmsData.work
