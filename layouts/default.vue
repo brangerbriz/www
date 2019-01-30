@@ -5,7 +5,7 @@
     <section v-else>
         <p>Give us a second, we're {{ $store.state.loadingStatus }}</p>
     </section>
-    <TheFooter/>
+    <TheFooter id="contact" v-if="$store.state.loadingStatus=='ready'"/>
   </section>
 </template>
 

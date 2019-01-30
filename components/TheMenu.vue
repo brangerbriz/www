@@ -41,7 +41,7 @@ export default {
         { text: 'Work', path: '/portfolio' },
         // { text: 'About', path: '/', sec: ' sect ion#statement' },
         { text: 'Blog', path: '/blog' },
-        // { text: 'R+D', path: '/', sec: ' sect ion#lab' },
+        { text: 'R+D', path: 'http://labs.brangerbriz.com/', sec: ' sect ion#lab' },
         { text: 'Contact', path: '/', sec: 'section#contact' }
       ],
       slugArr: null
@@ -63,7 +63,9 @@ export default {
       let pageY = document.documentElement.scrollTop
       if (this.$route.path === '/') {
         let vh = this.$parent.$el.querySelector('video').offsetHeight
-        if (pageY > vh) this.color = '#000'
+        let ph = window.innerHeight
+        let h = (vh < ph) ? vh : ph
+        if (pageY > h) this.color = '#000'
         else this.color = '#fff'
       } else if (slugs.includes(this.$route.path)) {
         if (pageY > window.innerHeight - 250) this.color = '#000'
@@ -115,7 +117,11 @@ export default {
       }
     },
     itemClick (o) {
-      this.$router.push(o.path)
+      if(o.path.includes('http')){
+        window.location = o.path
+      } else {
+        this.$router.push(o.path)
+      }
       Vue.nextTick(() => {
         if (document.querySelector('section.open')) {
           this.mbClick()
