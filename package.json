@@ -16,6 +16,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "BBElements": "git+https://github.com/brangerbriz/BBElements.git",
     "cross-env": "^5.2.0",
     "nuxt": "^2.4.2"
   },
