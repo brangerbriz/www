@@ -2,3 +2,9 @@ node_modules
 .DS_Store
 package-lock.json
 src/store/bbapi.js
+
+# nuxt.js build output
+.nuxt
+
+# Nuxt generate
+dist
