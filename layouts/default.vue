@@ -5,9 +5,12 @@
 </template>
 
 <script>
+import BBElements from 'BBElements'
+
 export default {
     mounted(){
-        // this.$store.dispatch('fetchFilms')
+      this.$store.dispatch('fetchData')
+      BBElements()
     }
 }
 </script>
