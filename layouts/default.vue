@@ -1,16 +1,21 @@
 <template>
-  <div>
+  <section>
     <TheMenu/>
-    <nuxt />
-  </div>
+    <nuxt v-if="$store.state.loadingStatus=='ready'" />
+    <section v-else>
+        <p>Give us a second, we're {{ $store.state.loadingStatus }}</p>
+    </section>
+    <TheFooter/>
+  </section>
 </template>
 
 <script>
 import BBElements from 'BBElements'
 import TheMenu from '~/components/TheMenu.vue'
+import TheFooter from '~/components/TheFooter.vue'
 
 export default {
-  components: { TheMenu },
+  components: { TheMenu, TheFooter },
   mounted(){
     this.$store.dispatch('fetchData')
     BBElements()
@@ -39,4 +44,7 @@ a:hover, a:hover { color:#e40477; border-bottom:2px solid #e40477; }
 }
 
 .tag-link:hover { color:#fff; background-color:#e40477; border:none; }
+
+/* override BBElements div styles on nuxt elements */
+#__nuxt, #__layout { max-width: none; padding: 0; }
 </style>
