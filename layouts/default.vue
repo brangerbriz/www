@@ -1,17 +1,20 @@
 <template>
   <div>
+    <TheMenu/>
     <nuxt />
   </div>
 </template>
 
 <script>
 import BBElements from 'BBElements'
+import TheMenu from '~/components/TheMenu.vue'
 
 export default {
-    mounted(){
-      this.$store.dispatch('fetchData')
-      BBElements()
-    }
+  components: { TheMenu },
+  mounted(){
+    this.$store.dispatch('fetchData')
+    BBElements()
+  }
 }
 </script>
 
