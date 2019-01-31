@@ -1,5 +1,4 @@
 export default () => ({
-  loadingStatus: 'not-ready',
   blog: [], // all blog posts
   work: [], // all portfolio posts
   filtered: [], // list of filtered posts for list-page

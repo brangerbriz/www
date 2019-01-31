@@ -36,6 +36,22 @@
 import BBElements from 'BBElements'
 
 export default {
+  head () {
+    let t = this.getPost().title
+    let s = this.getPost().summary
+    let i = 'https:'+this.getPost().socialImg
+    let u = 'https://brangerbriz.com/portfolio/' + this.getPost().slug
+    return {
+      title: t,
+      meta: [
+        { hid: 'description', name: 'description', content: s },
+        { hid: 'og:title', property: 'og:title', content: t },
+        { hid: 'og:description', property: 'og:description', content: s },
+        { hid: 'og:image', property: 'og:image', content: i },
+        { hid: 'og:url', property: 'og:url', content: u }
+      ]
+    }
+  },
   data () {
     return {
       caseStudyMargin: 0 // top margin to reveal case-study header images

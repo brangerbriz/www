@@ -92,7 +92,11 @@ export default {
       return (post.type === 'Case Study' || post.type === 'Standard')
     },
     showTags () {
-      return this.tags && window.innerWidth > 767
+      if (typeof window === 'undefined') {
+        return this.tags
+      } else {
+        return this.tags && window.innerWidth > 767
+      }
     },
     isSelected (w) {
       let wrd = w.toLowerCase().replace(/^\s+|\s+$/g, '')

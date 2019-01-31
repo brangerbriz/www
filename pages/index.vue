@@ -1,7 +1,7 @@
 <template>
   <section>
     <section id="slogan" ref="slogan">
-      <img src="~/assets/logo_white.svg" alt="branger_briz" id="logo">
+      <img src="~/assets/logo_white.svg" alt="branger_briz">
       <span ref="scopy">
           we make good digital <br>
           ideas <span class="pink" ref="phrase">worth sharing</span>

@@ -1,11 +1,8 @@
 <template>
   <section>
     <TheMenu/>
-    <nuxt v-if="$store.state.loadingStatus=='ready'" />
-    <section v-else>
-        <p>Give us a second, we're {{ $store.state.loadingStatus }}</p>
-    </section>
-    <TheFooter id="contact" v-if="$store.state.loadingStatus=='ready'"/>
+    <nuxt/>
+    <TheFooter id="contact"/>
   </section>
 </template>
 
@@ -16,10 +13,7 @@ import TheFooter from '~/components/TheFooter.vue'
 
 export default {
   components: { TheMenu, TheFooter },
-  mounted(){
-    this.$store.dispatch('fetchData')
-    BBElements()
-  }
+  mounted(){ BBElements() }
 }
 </script>
 
