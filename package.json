@@ -1,0 +1,28 @@
+{
+  "name": "www",
+  "version": "1.0.0",
+  "description": "the Branger_Briz website",
+  "author": "Nick Briz <nbriz@brangerbriz.com>",
+  "license": "GPL-3.0",
+  "homepage": "https://brangerbriz.com/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brangerbriz/www/"
+  },
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/google-analytics": "^2.0.2",
+    "BBElements": "git+https://github.com/brangerbriz/BBElements.git",
+    "axios": "^0.18.0",
+    "cross-env": "^5.2.0",
+    "nuxt": "^2.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
