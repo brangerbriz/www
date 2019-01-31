@@ -47,6 +47,4 @@ a:hover, a:hover { color:#e40477; border-bottom:2px solid #e40477; }
 
 .tags > a:hover { border-bottom: none; }
 
-/* override BBElements div styles on nuxt elements */
-#__nuxt, #__layout { max-width: none; padding: 0; }
 </style>

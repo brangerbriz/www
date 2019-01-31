@@ -268,13 +268,6 @@ export default {
 </script>
 
 <style scoped>
-#logo {
-  /* because nuxt places everything into a div */
-  /* this image is getting bb-element styling applied when it shouldn't be */
-  max-width: none;
-  float: none;
-  padding: 0 !important;
-}
 
 #slogan {
   font-family: "BB_title", sans-serif; color:#fff; line-height:102px;

@@ -200,7 +200,7 @@ export default {
   font-size:60px;
   width:300px;
   display:block;
-  margin:60px auto;
+  margin:20px auto;
   cursor:pointer;
   text-decoration: none;
   text-transform: lowercase;

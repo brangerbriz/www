@@ -226,11 +226,6 @@ export default {
 }
 .header img {
   cursor:pointer;
-  /* because nuxt places everything into a div */
-  /* this image is getting bb-element styling applied when it shouldn't be */
-  max-width: none !important;
-  float: none !important;
-  padding: 0 !important;
 }
 .header h3 {
   margin-top:-5px; padding-left:56px; text-transform:none;
