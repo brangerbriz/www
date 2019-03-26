@@ -1,5 +1,5 @@
 const NAME = 'Branger_Briz'
-const BRAND = 'https://brangerbriz.com/splash.png'
+const BRAND = 'https://brangerbriz.com/splash.jpg'
 const INFO = 'we are a full­service digital agency+lab made up of artists, strategists, educators && programmers bent on articulating contemporary culture. we produce award winning work for brands, agencies, and cultural institutions around the world.'
 
 module.exports = {
