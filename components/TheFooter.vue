@@ -43,7 +43,7 @@
           261 NE 1st st floor 3<br>Miami, FL 33132
       </span>
 
-      <span class="footer-city">chicago</span>
+      <!-- <span class="footer-city">chicago</span>
       <span class="footer-address">
           2010 W Fulton st F256<br>Chicago, IL 60612
       </span>
@@ -51,7 +51,7 @@
       <span class="footer-city">cali</span>
       <span class="footer-address">
           cra 4 oeste # 1 - 65<br>Cali, Colombia 760044
-      </span>
+      </span> -->
     </section>
 
   </section></section>

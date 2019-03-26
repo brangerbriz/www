@@ -36,5 +36,3 @@ npm run start
 ````
 
 any/all issues/updates should be added as an [issue](https://github.com/brangerbriz/www/issues)
-
-...testing webhook...
