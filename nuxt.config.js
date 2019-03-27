@@ -4,7 +4,10 @@ const INFO = 'we are a full­service digital agency+lab made up of artists, stra
 
 module.exports = {
   mode: 'universal',
-
+  server: {
+    port: 3000,
+    host: '0.0.0.0'
+  },
   head: {
     title: NAME,
     meta: [
