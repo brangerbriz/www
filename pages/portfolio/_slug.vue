@@ -89,7 +89,7 @@ export default {
     },
     getBGImg () {
       if (this.getPost().headerImg !== '') {
-        return `url(http:${this.getPost().headerImg})`
+        return `url(https:${this.getPost().headerImg})`
       }
     },
     calcBGImgHeight (callback) {
@@ -98,7 +98,7 @@ export default {
         let scaledHeight = img.height * (window.innerWidth / img.width)
         callback(scaledHeight)
       }
-      img.src = `http:${this.getPost().headerImg}`
+      img.src = `https:${this.getPost().headerImg}`
     },
     getMargin () {
       let post = this.$store.getters.currentPost(this.slug)
