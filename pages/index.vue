@@ -20,10 +20,7 @@
       <section class="copy">
         <span class="hide"></span>
 
-        <span>we're a full-service digital agency + lab
-        made up of artists, strategists, educators and programmers.
-        we produce award winning work for brands, agencies, and
-        cultural institutions around the world.</span>
+        <span>we're a digital agency + lab made up of developers, strategists, designers, artists and educators. we create software products and experiences for brands, startups, agencies, and cultural institutions around the world</span>
         <span></span>
         <span class="hide"></span>
         <span></span>
@@ -38,39 +35,28 @@
       <section>
         <h2>services</h2>
         <span>
-          <h4 @click="goToService($event)">online advertising</h4>
-          positioning<br>
-          strategy<br>
-          campaigns<br>
-          paid media management<br>
-          analysis & optimization<br>
+          <h4 @click="goToService($event)">startup gestation</h4>
+          guidance & consulting<br>
+          research<br>
+          prototyping<br>
+          spec development<br>
         </span>
         <span>
           <h4 @click="goToService($event)">platform development</h4>
+          wire-framing<br>
+          ux/ui design<br>
+          system integrations<br>
           architecture<br>
-          development<br>
-          desktop & mobile<br>
-          VR + AR<br>
+          desktop & mobile dev<br>
+          support & management<br>
         </span>
         <span>
-          <h4 @click="goToService($event)">social</h4>
-          strategy<br>
-          campaigns<br>
-          paid media management<br>
-          analysis & optimization<br>
-        </span>
-        <span class="break"></span>
-        <span>
-          <h4 @click="goToService($event)">experiental interactive </h4>
-          creative ideation<br>
-          design<br>
-          development<br>
-        </span>
-        <span>
-          <h4 @click="goToService($event)">emerging technologies</h4>
+          <h4 @click="goToService($event)">experiential interactive </h4>
           research & development<br>
-          prototyping<br>
           creative ideation<br>
+          emerging technologies (AI, VR, AR, etc)<br>
+          prototyping<br>
+          digital installations<br>
           integration & deployment<br>
         </span>
       </section>
