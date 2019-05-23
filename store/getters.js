@@ -3,10 +3,9 @@ export default {
     return state.loadingStatus !== 'ready'
   },
   allPosts (state) {
-    let all = [...state.blog, ...state.work]
-    return all.sort(function (a, b) {
-      return b.year - a.year
-    })
+    let orderedWork = [...state.work].sort((a, b) => b.year - a.year)
+    let orderedBlog = [...state.blog].sort((a, b) => b.year - a.year)
+    return [...orderedWork, ...orderedBlog]
   },
   currentPost (state) {
     return (slug) => {
