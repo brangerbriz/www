@@ -103,8 +103,8 @@ export default {
       if (this.focus < 0) this.focus = this.list.length - 1
     },
     clickListItem (e) {
-      for (let i = 0; i < e.target.parentNode.children.length; i++) {
-        if (e.target.parentNode.children[i] === e.target) {
+      for (let i = 0; i < e.currentTarget.parentNode.children.length; i++) {   	
+        if (e.currentTarget.parentNode.children[i] === e.currentTarget) {
           this.focus = i
           this.enterActive()
           break
