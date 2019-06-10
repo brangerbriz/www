@@ -14,10 +14,10 @@ module.exports = {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: INFO },
-      { hid: 'og:title', property: 'og:title', content: NAME },
-      { hid: 'og:description', property: 'og:description', content: INFO },
-      { hid: 'og:image', property: 'og:image', content: BRAND },
-      { hid: 'og:url', property: 'og:url', content: 'https://brangerbriz.com' },
+      { hid: 'og:title', prefix: 'og: http://ogp.me/ns#', property: 'og:title', content: NAME },
+      { hid: 'og:description', prefix: 'og: http://ogp.me/ns#', property: 'og:description', content: INFO },
+      { hid: 'og:image', prefix: 'og: http://ogp.me/ns#', property: 'og:image', content: BRAND },
+      { hid: 'og:url', prefix: 'og: http://ogp.me/ns#', property: 'og:url', content: 'https://brangerbriz.com' },
       { property: 'twitter:card', content: 'summary_large_image' }
     ],
     link: [
