@@ -20,7 +20,7 @@
     "BBElements": "git+https://github.com/brangerbriz/BBElements.git",
     "axios": "^0.18.0",
     "cross-env": "^5.2.0",
-    "nuxt": "^2.4.2"
+    "nuxt": "^2.15.8"
   },
   "devDependencies": {
     "nodemon": "^1.18.9"
