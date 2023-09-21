@@ -56,7 +56,9 @@
 
   </section></section>
 </template>
-
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/1972202.js"></script>
+<!-- End of HubSpot Embed Code -->
 <style scoped>
 .sb { position:absolute; bottom:0px; width:100%; }
 
